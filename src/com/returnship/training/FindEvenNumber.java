@@ -14,7 +14,7 @@ public class FindEvenNumber {
 		
 		//ENTER ELEMENTS OF ARRAY
 		System.out.println("ENTER ELEMENTS OF ARRAY: ");  
-		for(int i=1; i<n; i++){  
+		for(int i=0; i<n; i++){  
 			array[i]=sc.nextInt();  
 		}  
 		
@@ -24,9 +24,7 @@ public class FindEvenNumber {
 	        if (array[i] % 2 == 0) {
 	        	System.out.println("EVEN NUMBER FOUND"+array[i]); 
 	        }	          
-	        else {
-	        	System.out.println("EVEN NUMBER NOT FOUND");
-	        }
+	        
 	    }
 	    
 	}
