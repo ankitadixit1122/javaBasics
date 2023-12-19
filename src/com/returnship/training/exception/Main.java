@@ -9,21 +9,19 @@ public class Main {
             int[] number = new int[10];
             
             for(int i=0;i<5;i++){
-  			  number[i] = scanner.nextInt();
-  			  
-  			  	if (number[i] <= 0) {
-  			  		throw new InvalidInputException("Invalid input. Please enter a positive integer.");
-  			  	}
-            
-            	
-            	} 
-          		System.out.println("You enter all positive numbers");
-          		
+				number[i] = scanner.nextInt();
+					if (number[i] <= 0) {
+						throw new InvalidInputException("Invalid input. Please enter a positive integer.");
+				}
+            } 
+			System.out.println("You enter all positive numbers");
+
         }catch (InvalidInputException e) {     
-             System.out.println("Error: " + e.getMessage());
+        System.out.println("Error: " + e.getMessage());
+        
              // Catch any other exception and display a generic error message
         }catch (Exception e) {
-        	System.out.println("An error occurred: " + e.getMessage());
+        System.out.println("An error occurred: " + e.getMessage());
         }
     }
 }
